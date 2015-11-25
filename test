@@ -1,0 +1,7 @@
+#!/bin/bash
+
+make clean
+make
+./sim_cache 32 1024 8 256 0 0 perl_trace.txt > output.txt
+diff -iw output.txt Validation8_PartB.txt > debug
+

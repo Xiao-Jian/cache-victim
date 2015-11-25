@@ -1,0 +1,30 @@
+13c13
+< set 2:  800045    80058c    8003d2    800379    f6067d D  80018e    8003d8    800224 D
+---
+> set 2: 800045    80058c D  8003d2    800379 D  f6067d D  80018e    8003d8    f60677    
+16c16
+< set 0: 2000f4f   3d819ed D 2000dee   20006a2 D 3d819dd   20006a1   20006a5 D 2000f4c D
+---
+> set 0: 2000f4f    3d819ed D  20006a2 D  20009da    3d819dd    20006a1    20006a5 D  2000f4c D  
+19c19
+< b. number of L1 read misses:     15540
+---
+> b. number of L1 read misses:          14002
+21,24c21,24
+< d. number of L1 write misses:     5246
+< e. L1 miss rate:                0.2079
+< f. number of swaps:               5512
+< g. number of victim cache writeback:  7497
+---
+> d. number of L1 write misses:         4835
+> e. L1 miss rate:                      0.1884
+> f. number of swaps:                   4060
+> g. number of victim cache writeback:  6735
+31c31
+< n. total memory traffic:         35895
+---
+> n. total memory traffic:              25572
+33c33
+< 1. average access time:         4.8699 ns
+---
+> 1. average access time:         4.4607 ns

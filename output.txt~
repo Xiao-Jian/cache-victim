@@ -1,0 +1,32 @@
+8
+===== Simulator configuration =====
+BLOCKSIZE:                       32
+L1_SIZE:                       1024
+L1_ASSOC:                         8
+Victim_Cache_SIZE:              256
+L2_SIZE:                          0
+L2_ASSOC:                         0
+trace_file:           perl_trace.txt
+===================================
+===== L1 contents =====
+set   0:  800379    80037c D  8003d9    8003d8    8003d7    f6067b D  800368    800276 D
+set   1:  800379    8002c1 D  80037b    8003d7    80056c    8003d8    800045    80058c  
+set   2:  8003d2   2000893 D  800379    80058c    8003d8    f6067d D  80018e    800045  
+set   3:  80018e    8003d2 D  8003d1    800276    800580    8003d8    800325    f6067d D
+====== Simulation results (raw) ======
+a. number of L1 reads:           66303
+b. number of L1 read misses:     16554
+c. number of L1 writes:          28782
+d. number of L1 write misses:     5527
+e. L1 miss rate:                0.2322
+f. number of swaps:               4915
+g. number of victim cache writeback:  7802
+h. number of L2 reads:               0
+i. number of L2 read misses:         0
+j. number of L2 writes:              0
+k. number of L2 write misses:        0
+l. L2 miss rate:                     0
+m. number of L2 writebacks:          0
+n. total memory traffic:         29883
+==== Simulation results (performance) ====
+1. average access time:         0.5629 ns
