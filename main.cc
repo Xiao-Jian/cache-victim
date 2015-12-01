@@ -446,7 +446,8 @@ void printTail() {
     }
 
     L1.e = (L1.b*1.0 + L1.d*1.0) / (L1.a*1.0 + L1.c*1.0);
-    L2.e = L2.b*1.0 / L2.a*1.0;
+    if(L2.size)
+        L2.e = L2.b*1.0 / L2.a*1.0;
     if(L2.size) //having L2
         L2.g = L2.b + L2.d + L2.f;
     else //not having L2
