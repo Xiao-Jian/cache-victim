@@ -8,14 +8,14 @@ void cache::setData(int _a,int _b,int _c,int _d,int _f) {
     assoc = _c;
     replacement_policy = _d;
     write_policy = _f;
-	
+
     a = b = c = d = f = g = 0;
     e = 0;
-	
+
     memset(tag, 0, sizeof(tag));
     memset(flagD, 0, sizeof(flagD));
     memset(flagV, 0, sizeof(flagV));
-	
+
     cache_blocks = _b / _a;
     set = _b / ( _a * _c );
     index_bits = log(set) / log(2);
@@ -120,7 +120,7 @@ void cache::read(unsigned int add) {
                 tmpos = replaceLFU(index, tag1);
             else //LRU
                 tmpos = replaceLRU(add, tag1);
-    
+
             if(!write_policy) {
                 if(flagD[index][tmpos]) {
                     f ++;

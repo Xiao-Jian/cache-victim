@@ -19,7 +19,7 @@ void victim::setData(int _a,int _b) {
     for(int j = 0; j < cache_blocks; j ++ ) {
         counter[j] = j;
         flagV[j] = 1;
-        flagD[j] = 1;
+        flagD[j] = 0;
     }
     
 }

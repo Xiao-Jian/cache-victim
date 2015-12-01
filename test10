@@ -1,0 +1,6 @@
+#!/bin/bash
+
+make clean
+make
+./sim_cache 64 8192 2 1024 16384 4 perl_trace.txt > output10.txt
+diff -iw output10.txt Validation10_PartB.txt > debug10

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+make clean
+make
+./sim_cache 128 1024 2 1024 4096 4 gcc_trace.txt > output9.txt
+diff -iw output9.txt Validation9_PartB.txt > debug9
